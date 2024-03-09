@@ -1,8 +1,5 @@
-#include <iostream>
-using namespace std;
-class Odd {
-public:
-    static int sumOdd(int start, int end) {
+#include <stdio.h>
+int sumOdd(int start, int end) {
         if (start > end) {
             return -1;
         }
@@ -17,13 +14,8 @@ public:
             return sum;
         }
     }
-};
 int main() {
-	int res = Odd::sumOdd(10,20);
-	cout<< "Result : " << res << endl;
+	int res = sumOdd(10,20);
+	printf("Result : %d\n", res);
 	return 0;
 }
-
-
-
-
